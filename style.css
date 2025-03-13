@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  display: flex; /* 플렉스 박스로 설정 */
+
+  /* 가로 세로 중앙 정렬하기 */
+  justify-content: center; /* 주축 방향(여기선 기본값인 row 적용)으로 아이템들 정렬 -> 가로 중앙 정렬 */
+  align-items: center; /* 교차축 방향(여기선 기본값인 column)으로 아이템들 정렬 -> 세로 중앙 정렬 */
+  /* 결과: 아이템(직속 자식 요소)들이 가로 + 세로 + 중앙 정렬된다. => 브라우저 화면의 한 가운데에 배치됨 */
+
+  background-color: hsl(0, 0%, 8%); /*hsl(색상, 채도, 명도)*/
+  color: white;
+}
+
+body {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 350px;
+  height: 550px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column; /* 주축을 세로로 설정 */
+  align-items: center; /* 주축(세로) 방향으로 아이템 정렬 */
+  justify-content: center; /* 교차축(가로) 방향으로 아이템 정렬 */
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 8%; /* 모서리를 둥글게 만드는 속성 */
+}
+
+.introduction {
+  text-align: center;
+}
+
+.introduction img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.introduction h1 {
+  margin: 6px 0;
+  font-weight: 700;
+}
+
+.introduction h2 {
+  font-weight: 500;
+  color: hsl(75, 94%, 57%);
+}
+
+.introduction p {
+  margin: 20px 0;
+}
+
+.social a {
+  display: block;
+  width: 270px;
+  height: 40px;
+  border-radius: 3%;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  text-align: center;
+  line-height: 40px; /* 텍스트 세로 간격 조절 */
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.social a:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
+}
+
+.social a:last-child {
+  margin-bottom: 0;  /* 마지막 항목에 마진을 없앰 */
+}
+
