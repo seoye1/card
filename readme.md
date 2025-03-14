@@ -1,8 +1,10 @@
 ## The challenge
 
-바닐라 js로 만드는 카드
-
 ![](./card.png)
+
+## Built With
+- html, css
+- flex box Layout
 
 ## What I learned
 
